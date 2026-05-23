@@ -1,8 +1,16 @@
-﻿#!/usr/bin/env python3
+#!/usr/bin/env python3
 """Module for numpy matrix multiplication."""
 import numpy as np
 
 
 def np_matmul(mat1, mat2):
-    """Perform matrix multiplication on two numpy arrays."""
+    """Perform matrix multiplication on two numpy arrays.
+
+    Args:
+        mat1: First numpy.ndarray.
+        mat2: Second numpy.ndarray.
+
+    Returns:
+        numpy.ndarray: Result of matrix multiplication.
+    """
     return np.matmul(mat1, mat2)

@@ -1,9 +1,18 @@
-﻿#!/usr/bin/env python3
+#!/usr/bin/env python3
 """Module for 2D matrix concatenation along an axis."""
 
 
 def cat_matrices2D(mat1, mat2, axis=0):
-    """Concatenate two 2D matrices along a specific axis."""
+    """Concatenate two 2D matrices along a specific axis.
+
+    Args:
+        mat1: First 2D matrix.
+        mat2: Second 2D matrix.
+        axis: 0 for vertical, 1 for horizontal.
+
+    Returns:
+        list: New concatenated matrix, or None if incompatible.
+    """
     if axis == 0:
         if len(mat1[0]) != len(mat2[0]):
             return None

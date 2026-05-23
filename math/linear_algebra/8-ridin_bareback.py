@@ -1,9 +1,17 @@
-﻿#!/usr/bin/env python3
+#!/usr/bin/env python3
 """Module for matrix multiplication."""
 
 
 def mat_mul(mat1, mat2):
-    """Multiply two 2D matrices."""
+    """Multiply two 2D matrices.
+
+    Args:
+        mat1: First matrix (m x n).
+        mat2: Second matrix (n x p).
+
+    Returns:
+        list: New matrix (m x p), or None if dimensions incompatible.
+    """
     if len(mat1[0]) != len(mat2):
         return None
     result = []
