@@ -15,7 +15,8 @@ def inverse(matrix):
         TypeError: If matrix is not a list of lists.
         ValueError: If matrix is not square or is empty.
     """
-    if not isinstance(matrix, list) or not all(isinstance(row, list) for row in matrix):
+    if not isinstance(matrix, list) or not all(
+            isinstance(row, list) for row in matrix):
         raise TypeError("matrix must be a list of lists")
     if len(matrix) == 0 or matrix == [[]]:
         raise ValueError("matrix must be a non-empty square matrix")
@@ -47,7 +48,8 @@ def adjugate(matrix):
     Returns:
         list: The adjugate matrix.
     """
-    if not isinstance(matrix, list) or not all(isinstance(row, list) for row in matrix):
+    if not isinstance(matrix, list) or not all(
+            isinstance(row, list) for row in matrix):
         raise TypeError("matrix must be a list of lists")
     if len(matrix) == 0 or matrix == [[]]:
         raise ValueError("matrix must be a non-empty square matrix")
@@ -76,7 +78,8 @@ def cofactor(matrix):
     Returns:
         list: The cofactor matrix.
     """
-    if not isinstance(matrix, list) or not all(isinstance(row, list) for row in matrix):
+    if not isinstance(matrix, list) or not all(
+            isinstance(row, list) for row in matrix):
         raise TypeError("matrix must be a list of lists")
     if len(matrix) == 0 or matrix == [[]]:
         raise ValueError("matrix must be a non-empty square matrix")
@@ -106,7 +109,8 @@ def minor(matrix):
     Returns:
         list: The minor matrix.
     """
-    if not isinstance(matrix, list) or not all(isinstance(row, list) for row in matrix):
+    if not isinstance(matrix, list) or not all(
+            isinstance(row, list) for row in matrix):
         raise TypeError("matrix must be a list of lists")
     if len(matrix) == 0 or matrix == [[]]:
         raise ValueError("matrix must be a non-empty square matrix")
